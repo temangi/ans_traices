@@ -1,14 +1,14 @@
-import img1 from "./images/img1.png"
-import img2 from "./images/img2.png"
-import img3 from "./images/img3.png"
-import img4 from "./images/img4.png"
+import img1 from "./images/img1.svg"
+import img2 from "./images/img2.svg"
+import img3 from "./images/img3.svg"
+import img4 from "./images/img4.svg"
 import scss from "./Footer.module.scss"
 
 export const Footer = () => {
     return(
         <section>
             <main>
-            <div>
+            <div className={scss.text_main}>
                 <h1>Kyrgyz Traces</h1>
                 <p>
                 We are proudly the Best Inside Travel DMCs <br />
@@ -17,7 +17,7 @@ export const Footer = () => {
                 </p>
 
             </div>    
-            <div>
+            <div className={scss.contact}>
                 <h1>CONTACT US</h1>
                 <p><span>Email:</span> experts@kyrgyzriders.kg</p>
                 <p><span>Hotline:</span> +996 (555) 55-55-55</p>
