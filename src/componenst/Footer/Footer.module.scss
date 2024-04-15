@@ -1,0 +1,85 @@
+section{
+    font-family: "Montserrat", sans-serif;
+    padding: 30px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    h4{
+        color: #474747;
+    }
+    .text_bottom{
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-size: 18px;
+            line-height: 18px;
+            color: #474747;
+        }
+    }
+    main{
+        display: flex;
+        justify-content: space-between;
+        .text_main{
+            span{
+                cursor: pointer;
+            }
+        }
+        h1{
+            color: #008060;
+            line-height: 50px;
+        }
+        p{
+            color: #868686;
+            line-height: 30px;
+        }
+        span{
+            color: #474747;
+            font-size: 18px;
+            line-height: 0px;
+            font-weight: 500;
+        }
+        button{
+            cursor: pointer;
+            background: #ffffff;
+            border: none;
+        }
+        .follow_us{
+            div{
+                display: flex;
+                gap: 25px;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    section{
+        padding:30px 20px 0 20px;
+        gap: 60px;
+        display: flex;
+        .text_bottom{
+            flex-wrap: wrap;
+            p{
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 30px;
+            }
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .contact{
+                padding-bottom: 20px;
+            }
+           .text_main{
+                display: none;
+            } 
+            .follow_us{
+                padding-top: 20px;
+                border-top: 1px #DCDCDC solid;
+            }
+        }
+    }
+}
