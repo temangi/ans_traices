@@ -1,6 +1,4 @@
-section{
-    font-family: "Montserrat", sans-serif;
-    padding: 30px 50px 0 50px;
+.footer_section{
     display: flex;
     flex-direction: column;
     gap: 70px;
@@ -16,7 +14,7 @@ section{
             color: #474747;
         }
     }
-    main{
+    .footer_main{
         display: flex;
         justify-content: space-between;
         .text_main{
