@@ -11,9 +11,9 @@ const CardThor = () => {
             <h4>Discover Karakol</h4>
             <p>Tour class:</p>
             <div className={scss.card_btn}>
-              <button>Trekking</button>
-              <button>Horses</button>
-              <button>Popular</button>
+              <button className={scss.btn1}>Trekking</button>
+              <button className={scss.btn2}>Horses</button>
+              <button className={scss.btn3}>Popular</button>
             </div>
           </div>
         </div>
