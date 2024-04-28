@@ -1,0 +1,62 @@
+.card{
+    position: relative;
+    background: white;
+    border-radius: 3px;
+    margin: 0 15px 0 15px;
+    padding-bottom: 15px;
+    img{
+        width: 100%;
+    }
+    span{
+        position: absolute;
+        right: 0px;
+        color: #008060;
+        padding: 24px 15px 24px 15px;
+        background: white;
+        border-radius: 0 3px 0 32px;
+    }
+    .card_main{
+        padding: 0 20px 0 20px;
+        p{
+            color: #868686;
+            font-size: 15px;
+            font-weight: 500;
+            padding-top: 15px;
+        }
+        h4{
+            color: #474747;
+            font-size: 18px;
+            font-weight: 500;
+            padding-bottom: 15px ;
+            border-bottom: 1px solid #DCDCDC;
+        }
+    }    
+    .card_btn{
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-between;
+        button{
+            padding: 8px 25px 8px 25px;
+            background: none;
+            border: 1px solid  rgb(42, 206, 165);
+            border-radius: 3px;
+            font-weight: 400;
+            font-size: 15px;
+            color: #008060;
+        }
+   }
+}
+
+@media screen and (max-width: 400px) {
+    .card{
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+        .card_btn{
+            gap: 4px;
+            flex-wrap: wrap;
+            button{
+                width: 100px;   
+            }
+        }
+    }
+
+}

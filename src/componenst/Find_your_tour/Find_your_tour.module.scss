@@ -1,0 +1,111 @@
+.s1{
+    background: #FAF7ED;
+    padding-bottom: 40px;
+    .s1_tour__cards{
+        position: relative;
+        padding-top: 40px;
+        .img_arrow_left, .img_arrow_right{
+            position: absolute;
+            top: 25%;
+            z-index: 1;
+        }
+        .img_arrow_left{
+            left: -5%;
+        }
+        .img_arrow_right{
+            right: -5%;
+        }
+    }
+    .s1_main{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #DCDCDC;
+        .btn_tours{
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            button{
+                flex-grow: 1;
+                padding: 10px 25px 10px 25px;
+                border-radius: 3px;
+                border: 1px solid #DCDCDC;
+                background: none;
+                color: #868686;
+                margin: 0 20px 15px 0 ;
+                &:hover{
+                    color: #2ACEA5;
+                    border: 1px solid #2ACEA5;
+                }
+            }
+            .button_active{
+                background: rgb(0, 128, 96);
+                color: white;
+            }
+        }
+        .s1_tour{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 40%;
+            button{
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 20px 15px 20px;
+                text-align: start;
+                background: #008060;
+                border-radius: 3px;
+                border: none;
+                color: white;
+                display: none;
+            }
+            h1{
+                color: #474747;
+                font-size: 42px;
+                font-weight: 500;
+            }
+            p{
+                color: #868686;
+                font-size: 20px;
+            }
+            span{
+                color: rgb(0, 128, 96);
+                font-size: 18px;
+                display: flex;
+                gap: 20px;
+                width: 36%;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .s1{
+        .s1_main{
+            display: block;
+            .btn_tours{
+                display: none;
+            }
+            .s1_tour{
+                width: 100%;
+                button{
+                    display: flex;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                span{
+                    display: none;
+                }
+                p{
+                    font-size: 16px;
+                }
+                br{
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

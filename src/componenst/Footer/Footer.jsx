@@ -6,8 +6,8 @@ import scss from "./Footer.module.scss"
 
 export const Footer = () => {
     return(
-        <section>
-            <main>
+        <section className={scss.footer_section}>
+            <main className={scss.footer_main}>
             <div className={scss.text_main}>
                 <h1>Kyrgyz Traces</h1>
                 <p>
